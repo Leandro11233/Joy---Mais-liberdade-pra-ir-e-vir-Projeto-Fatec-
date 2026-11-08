@@ -58,6 +58,9 @@
     <Compile Update="Sucesso.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Tela1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Trajeto.cs">
       <SubType>Form</SubType>
     </Compile>

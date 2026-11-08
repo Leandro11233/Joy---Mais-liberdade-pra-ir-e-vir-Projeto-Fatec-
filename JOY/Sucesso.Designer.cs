@@ -29,7 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sucesso));
+            button22 = new Button();
             SuspendLayout();
+            // 
+            // button22
+            // 
+            button22.BackColor = Color.Transparent;
+            button22.FlatAppearance.BorderColor = Color.White;
+            button22.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button22.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button22.FlatStyle = FlatStyle.Flat;
+            button22.ForeColor = Color.Transparent;
+            button22.Location = new Point(12, 600);
+            button22.Name = "button22";
+            button22.Size = new Size(436, 58);
+            button22.TabIndex = 21;
+            button22.UseVisualStyleBackColor = false;
+            button22.Click += button22_Click;
             // 
             // Sucesso
             // 
@@ -38,6 +54,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(460, 776);
+            Controls.Add(button22);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Sucesso";
             StartPosition = FormStartPosition.CenterScreen;
@@ -46,5 +63,7 @@
         }
 
         #endregion
+
+        private Button button22;
     }
 }

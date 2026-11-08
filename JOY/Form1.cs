@@ -11,5 +11,47 @@ namespace JOY
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                DialogResult resultado = MessageBox.Show(
+                    "Por favor, informe seu nome para continuar!",
+                    "JOY",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                    );
+
+                if (resultado == DialogResult.OK)
+                {
+                    textBox1.Focus();
+                }
+                return;
+            }
+
+            DataNasc tela = new DataNasc();
+            tela.Show();
+            this.Hide();
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) &&
+            !char.IsWhiteSpace(e.KeyChar) &&
+            e.KeyChar != '-' &&
+            e.KeyChar != '\'' &&
+            !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        
+        }
     }
 }

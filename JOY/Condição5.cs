@@ -14,5 +14,29 @@ namespace JOY
         {
             InitializeComponent();
         }
+
+        private void Condição5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Condição tela = new Condição();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Personalização tela = new Personalização();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void txtDificuldade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
