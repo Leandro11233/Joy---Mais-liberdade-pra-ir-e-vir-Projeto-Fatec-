@@ -40,5 +40,22 @@ namespace JOY
             tela.Show();
             this.Hide();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Home tela = new Home();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
