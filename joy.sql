@@ -116,3 +116,48 @@ CREATE TABLE notificacao (
     FOREIGN KEY (id_trajeto) REFERENCES trajeto(id_trajeto) ON DELETE CASCADE,
     FOREIGN KEY (id_contato) REFERENCES contato_confianca(id_contato) ON DELETE CASCADE
 );
+
+CREATE TABLE local_favorito (
+    id_local INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    apelido VARCHAR(100) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    latitude DECIMAL(10,7),
+    longitude DECIMAL(10,7),
+    data_cadastro DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
+);
+
+CREATE TABLE rota_salva (
+    id_rota_salva INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    id_rota INT NOT NULL,
+    nome_rota VARCHAR(100) NOT NULL,
+    origem VARCHAR(255) NOT NULL,
+    destino VARCHAR(255) NOT NULL,
+    modalidade ENUM('A pé', 'Ônibus', 'Carro') NOT NULL,
+    vezes_utilizada INT DEFAULT 0,
+    data_salva DATETIME DEFAULT CURRENT_TIMESTAMP,
+    ultimo_uso DATETIME NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE,
+    FOREIGN KEY (id_rota) REFERENCES rota(id_rota) ON DELETE CASCADE
+);
+
+CREATE TABLE historico_trajeto (
+    id_historico INT AUTO_INCREMENT PRIMARY KEY,
+    id_trajeto INT NOT NULL,
+    status_anterior VARCHAR(30),
+    status_novo VARCHAR(30) NOT NULL,
+    data_alteracao DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_trajeto) REFERENCES trajeto(id_trajeto) ON DELETE CASCADE
+);
+
+CREATE TABLE avaliacao_trajeto (
+    id_avaliacao INT AUTO_INCREMENT PRIMARY KEY,
+    id_trajeto INT NOT NULL,
+    nota TINYINT NOT NULL,
+    comentario VARCHAR(255),
+    data_avaliacao DATETIME DEFAULT CURRENT_TIMESTAMP,
+    CHECK (nota BETWEEN 1 AND 5),
+    FOREIGN KEY (id_trajeto) REFERENCES trajeto(id_trajeto) ON DELETE CASCADE
+);
