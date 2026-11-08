@@ -14,5 +14,19 @@ namespace JOY
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Trajeto tela = new Trajeto();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           Home tela = new Home();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

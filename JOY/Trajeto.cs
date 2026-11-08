@@ -14,5 +14,19 @@ namespace JOY
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Mapa tela = new Mapa();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Chegada tela = new Chegada();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

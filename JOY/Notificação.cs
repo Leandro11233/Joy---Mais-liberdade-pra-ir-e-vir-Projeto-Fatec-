@@ -14,5 +14,12 @@ namespace JOY
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Home tela = new Home();
+            tela.Show();
+            this.Hide();
+        }
     }
 }
