@@ -18,6 +18,7 @@ namespace JOY
         private void button19_Click(object sender, EventArgs e)
         {
             string nome = txtNomeContato.Text.Trim();
+            string telefone = txtTelefoneContato.Text.Trim();
             if (string.IsNullOrWhiteSpace(nome) ||
                 nome.Equals("Nome", StringComparison.OrdinalIgnoreCase) ||
                 !System.Text.RegularExpressions.Regex.IsMatch(
@@ -32,6 +33,8 @@ namespace JOY
                 txtNomeContato.Focus();
                 return;
             }
+            DadosContato.Nome = nome;
+            DadosContato.Telefone = telefone;
 
             Sucesso tela = new Sucesso();
             tela.Show();

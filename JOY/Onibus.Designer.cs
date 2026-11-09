@@ -48,10 +48,9 @@
             button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = Color.Transparent;
-            button3.Location = new Point(21, 457);
-            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Location = new Point(24, 609);
             button3.Name = "button3";
-            button3.Size = new Size(360, 40);
+            button3.Size = new Size(411, 53);
             button3.TabIndex = 15;
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
@@ -59,30 +58,27 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(324, 191);
-            checkBox1.Margin = new Padding(3, 2, 3, 2);
+            checkBox1.Location = new Point(370, 255);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
+            checkBox1.Size = new Size(18, 17);
             checkBox1.TabIndex = 16;
             checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(324, 273);
-            checkBox2.Margin = new Padding(3, 2, 3, 2);
+            checkBox2.Location = new Point(370, 364);
             checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(15, 14);
+            checkBox2.Size = new Size(18, 17);
             checkBox2.TabIndex = 17;
             checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(324, 356);
-            checkBox3.Margin = new Padding(3, 2, 3, 2);
+            checkBox3.Location = new Point(370, 475);
             checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(15, 14);
+            checkBox3.Size = new Size(18, 17);
             checkBox3.TabIndex = 18;
             checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -93,10 +89,9 @@
             button13.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button13.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button13.FlatStyle = FlatStyle.Flat;
-            button13.Location = new Point(12, 26);
-            button13.Margin = new Padding(3, 2, 3, 2);
+            button13.Location = new Point(14, 35);
             button13.Name = "button13";
-            button13.Size = new Size(56, 27);
+            button13.Size = new Size(64, 36);
             button13.TabIndex = 19;
             button13.UseVisualStyleBackColor = false;
             button13.Click += button13_Click;
@@ -106,9 +101,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(116, 191);
+            label1.Location = new Point(133, 255);
             label1.Name = "label1";
-            label1.Size = new Size(151, 21);
+            label1.Size = new Size(193, 28);
             label1.TabIndex = 20;
             label1.Text = "Água Branca - 7:50";
             label1.Click += label1_Click;
@@ -118,9 +113,9 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(116, 273);
+            label2.Location = new Point(133, 364);
             label2.Name = "label2";
-            label2.Size = new Size(184, 21);
+            label2.Size = new Size(232, 28);
             label2.TabIndex = 21;
             label2.Text = "Hilda Mandarino - 7:50";
             // 
@@ -129,20 +124,20 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(116, 356);
+            label3.Location = new Point(133, 475);
             label3.Name = "label3";
-            label3.Size = new Size(140, 21);
+            label3.Size = new Size(176, 28);
             label3.TabIndex = 22;
             label3.Text = "Umuarama - 7:50";
             label3.Click += label3_Click;
             // 
             // Onibus
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(402, 582);
+            ClientSize = new Size(459, 776);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -152,10 +147,10 @@
             Controls.Add(checkBox1);
             Controls.Add(button3);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Onibus";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Onibus";
+            Load += Onibus_Load;
             ResumeLayout(false);
             PerformLayout();
         }

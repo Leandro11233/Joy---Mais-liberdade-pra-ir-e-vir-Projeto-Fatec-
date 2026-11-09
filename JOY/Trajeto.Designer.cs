@@ -32,6 +32,8 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button3
@@ -43,10 +45,9 @@
             button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = Color.Transparent;
-            button3.Location = new Point(21, 496);
-            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Location = new Point(24, 661);
             button3.Name = "button3";
-            button3.Size = new Size(360, 40);
+            button3.Size = new Size(411, 53);
             button3.TabIndex = 16;
             button3.UseVisualStyleBackColor = false;
             // 
@@ -57,10 +58,9 @@
             button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(21, 20);
-            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Location = new Point(24, 27);
             button2.Name = "button2";
-            button2.Size = new Size(44, 31);
+            button2.Size = new Size(50, 41);
             button2.TabIndex = 17;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -74,29 +74,40 @@
             button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(21, 496);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(24, 661);
             button1.Name = "button1";
-            button1.Size = new Size(360, 40);
+            button1.Size = new Size(411, 53);
             button1.TabIndex = 18;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 173);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(435, 469);
+            pictureBox1.TabIndex = 19;
+            pictureBox1.TabStop = false;
+            // 
             // Trajeto
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(402, 582);
+            ClientSize = new Size(459, 776);
+            Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(button3);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Trajeto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trajeto";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -105,5 +116,6 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }

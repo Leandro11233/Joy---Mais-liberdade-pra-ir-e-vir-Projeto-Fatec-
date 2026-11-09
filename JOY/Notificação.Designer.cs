@@ -41,27 +41,26 @@
             button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(22, 466);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(25, 621);
             button1.Name = "button1";
-            button1.Size = new Size(368, 44);
+            button1.Size = new Size(421, 59);
             button1.TabIndex = 18;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // Notificação
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(402, 582);
+            ClientSize = new Size(459, 776);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Notificação";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Notificação";
+            Load += Notificação_Load;
             ResumeLayout(false);
         }
 

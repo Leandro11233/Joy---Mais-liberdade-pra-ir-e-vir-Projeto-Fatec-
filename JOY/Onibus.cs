@@ -36,7 +36,7 @@ namespace JOY
                 return;
             }
 
-            Mapa tela = new Mapa();
+            Trajeto tela = new Trajeto();
             tela.Show();
             this.Hide();
         }
@@ -54,6 +54,11 @@ namespace JOY
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Onibus_Load(object sender, EventArgs e)
         {
 
         }

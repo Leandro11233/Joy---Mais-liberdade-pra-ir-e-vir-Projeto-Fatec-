@@ -29,26 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedestre));
-            button30 = new Button();
             button29 = new Button();
+            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            button50 = new Button();
+            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
-            // 
-            // button30
-            // 
-            button30.BackColor = Color.Transparent;
-            button30.FlatAppearance.BorderColor = Color.White;
-            button30.FlatAppearance.BorderSize = 0;
-            button30.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button30.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button30.FlatStyle = FlatStyle.Flat;
-            button30.ForeColor = Color.Transparent;
-            button30.Location = new Point(12, 475);
-            button30.Margin = new Padding(3, 2, 3, 2);
-            button30.Name = "button30";
-            button30.Size = new Size(371, 47);
-            button30.TabIndex = 14;
-            button30.UseVisualStyleBackColor = false;
-            button30.Click += button30_Click;
             // 
             // button29
             // 
@@ -57,36 +42,65 @@
             button29.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button29.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button29.FlatStyle = FlatStyle.Flat;
-            button29.Location = new Point(12, 11);
-            button29.Margin = new Padding(3, 2, 3, 2);
+            button29.Location = new Point(14, 15);
             button29.Name = "button29";
-            button29.Size = new Size(52, 41);
+            button29.Size = new Size(59, 55);
             button29.TabIndex = 15;
             button29.UseVisualStyleBackColor = false;
             button29.Click += button29_Click;
             // 
+            // webView21
+            // 
+            webView21.AllowExternalDrop = true;
+            webView21.CreationProperties = null;
+            webView21.DefaultBackgroundColor = Color.White;
+            webView21.Location = new Point(14, 187);
+            webView21.Name = "webView21";
+            webView21.Size = new Size(433, 428);
+            webView21.TabIndex = 16;
+            webView21.ZoomFactor = 1D;
+            webView21.Click += webView21_Click;
+            // 
+            // button3
+            // 
+            button50.BackColor = Color.Transparent;
+            button50.FlatAppearance.BorderColor = Color.White;
+            button50.FlatAppearance.BorderSize = 0;
+            button50.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button50.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button50.FlatStyle = FlatStyle.Flat;
+            button50.ForeColor = Color.Transparent;
+            button50.Location = new Point(24, 638);
+            button50.Name = "button50";
+            button50.Size = new Size(411, 53);
+            button50.TabIndex = 17;
+            button50.UseVisualStyleBackColor = false;
+            button50.Click += button50_Click;
+            // 
             // Pedestre
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(402, 582);
+            ClientSize = new Size(459, 776);
+            Controls.Add(button50);
+            Controls.Add(webView21);
             Controls.Add(button29);
-            Controls.Add(button30);
             Enabled = false;
             ForeColor = SystemColors.Control;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Pedestre";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pedestre";
+            Load += Pedestre_Load;
+            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button button30;
         private Button button29;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private Button button50;
     }
 }

@@ -21,5 +21,11 @@ namespace JOY
             tela.Show();
             this.Hide();
         }
+
+        private void Notificação_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

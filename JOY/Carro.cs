@@ -36,7 +36,7 @@ namespace JOY
                 return;
             }
 
-            Mapa tela = new Mapa();
+            Trajeto tela = new Trajeto();
             tela.Show();
             this.Hide();
         }
@@ -44,6 +44,18 @@ namespace JOY
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Carro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            Home tela = new Home();
+            tela.Show();
+            this.Hide();
         }
     }
 }

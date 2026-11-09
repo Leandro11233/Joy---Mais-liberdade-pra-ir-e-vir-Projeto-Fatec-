@@ -35,6 +35,8 @@ namespace JOY
                 return;
             }
 
+            DadosContato.NomeUsuario = textBox1.Text.Trim();
+
             DataNasc tela = new DataNasc();
             tela.Show();
             this.Hide();

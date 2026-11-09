@@ -17,7 +17,7 @@ namespace JOY
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Mapa tela = new Mapa();
+            Home tela = new Home();
             tela.Show();
             this.Hide();
         }

@@ -34,6 +34,8 @@
             chkApe = new CheckBox();
             chkOnibus = new CheckBox();
             chkCarro = new CheckBox();
+            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
             // 
             // button7
@@ -45,10 +47,9 @@
             button7.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button7.FlatStyle = FlatStyle.Flat;
             button7.ForeColor = Color.Transparent;
-            button7.Location = new Point(23, 388);
-            button7.Margin = new Padding(3, 2, 3, 2);
+            button7.Location = new Point(26, 517);
             button7.Name = "button7";
-            button7.Size = new Size(113, 72);
+            button7.Size = new Size(129, 96);
             button7.TabIndex = 10;
             button7.UseVisualStyleBackColor = false;
             // 
@@ -61,10 +62,9 @@
             button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = Color.Transparent;
-            button3.Location = new Point(12, 482);
-            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Location = new Point(14, 643);
             button3.Name = "button3";
-            button3.Size = new Size(371, 47);
+            button3.Size = new Size(424, 63);
             button3.TabIndex = 13;
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
@@ -72,51 +72,64 @@
             // chkApe
             // 
             chkApe.AutoSize = true;
-            chkApe.Location = new Point(33, 399);
-            chkApe.Margin = new Padding(3, 2, 3, 2);
+            chkApe.Location = new Point(38, 532);
             chkApe.Name = "chkApe";
-            chkApe.Size = new Size(15, 14);
+            chkApe.Size = new Size(18, 17);
             chkApe.TabIndex = 14;
             chkApe.UseVisualStyleBackColor = true;
+            chkApe.CheckedChanged += chkApe_CheckedChanged;
             // 
             // chkOnibus
             // 
             chkOnibus.AutoSize = true;
-            chkOnibus.Location = new Point(156, 399);
-            chkOnibus.Margin = new Padding(3, 2, 3, 2);
+            chkOnibus.Location = new Point(178, 532);
             chkOnibus.Name = "chkOnibus";
-            chkOnibus.Size = new Size(15, 14);
+            chkOnibus.Size = new Size(18, 17);
             chkOnibus.TabIndex = 15;
             chkOnibus.UseVisualStyleBackColor = true;
+            chkOnibus.CheckedChanged += chkOnibus_CheckedChanged;
             // 
             // chkCarro
             // 
             chkCarro.AutoSize = true;
-            chkCarro.Location = new Point(279, 399);
-            chkCarro.Margin = new Padding(3, 2, 3, 2);
+            chkCarro.Location = new Point(319, 532);
             chkCarro.Name = "chkCarro";
-            chkCarro.Size = new Size(15, 14);
+            chkCarro.Size = new Size(18, 17);
             chkCarro.TabIndex = 16;
             chkCarro.UseVisualStyleBackColor = true;
             chkCarro.CheckedChanged += chkCarro_CheckedChanged;
             // 
+            // webView21
+            // 
+            webView21.AllowExternalDrop = true;
+            webView21.CreationProperties = null;
+            webView21.DefaultBackgroundColor = Color.White;
+            webView21.Location = new Point(12, 112);
+            webView21.Name = "webView21";
+            webView21.Size = new Size(435, 349);
+            webView21.TabIndex = 18;
+            webView21.ZoomFactor = 1D;
+            webView21.Click += webView21_Click;
+            // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(402, 582);
+            ClientSize = new Size(459, 776);
+            Controls.Add(webView21);
             Controls.Add(chkCarro);
             Controls.Add(chkOnibus);
             Controls.Add(chkApe);
             Controls.Add(button3);
             Controls.Add(button7);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
+            Load += Home_Load;
+            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -128,5 +141,6 @@
         private CheckBox chkApe;
         private CheckBox chkOnibus;
         private CheckBox chkCarro;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
     }
 }

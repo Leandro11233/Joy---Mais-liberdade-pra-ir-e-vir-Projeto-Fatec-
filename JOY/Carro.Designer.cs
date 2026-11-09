@@ -36,6 +36,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            button40 = new Button();
             SuspendLayout();
             // 
             // button3
@@ -47,10 +48,9 @@
             button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = Color.Transparent;
-            button3.Location = new Point(21, 485);
-            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Location = new Point(24, 647);
             button3.Name = "button3";
-            button3.Size = new Size(360, 40);
+            button3.Size = new Size(411, 53);
             button3.TabIndex = 15;
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
@@ -58,30 +58,27 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(339, 202);
-            checkBox1.Margin = new Padding(3, 2, 3, 2);
+            checkBox1.Location = new Point(387, 269);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
+            checkBox1.Size = new Size(18, 17);
             checkBox1.TabIndex = 16;
             checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(339, 298);
-            checkBox2.Margin = new Padding(3, 2, 3, 2);
+            checkBox2.Location = new Point(387, 397);
             checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(15, 14);
+            checkBox2.Size = new Size(18, 17);
             checkBox2.TabIndex = 17;
             checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(339, 392);
-            checkBox3.Margin = new Padding(3, 2, 3, 2);
+            checkBox3.Location = new Point(387, 523);
             checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(15, 14);
+            checkBox3.Size = new Size(18, 17);
             checkBox3.TabIndex = 18;
             checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -90,9 +87,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(191, 196);
+            label1.Location = new Point(218, 261);
             label1.Name = "label1";
-            label1.Size = new Size(131, 21);
+            label1.Size = new Size(162, 28);
             label1.TabIndex = 19;
             label1.Text = "Robson Oliveira";
             label1.Click += label1_Click;
@@ -102,9 +99,9 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(191, 292);
+            label2.Location = new Point(218, 389);
             label2.Name = "label2";
-            label2.Size = new Size(123, 21);
+            label2.Size = new Size(152, 28);
             label2.TabIndex = 20;
             label2.Text = "Luíza de Souza";
             // 
@@ -113,19 +110,34 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(191, 385);
+            label3.Location = new Point(218, 513);
             label3.Name = "label3";
-            label3.Size = new Size(129, 21);
+            label3.Size = new Size(159, 28);
             label3.TabIndex = 21;
             label3.Text = "Cleiton da Silva";
             // 
+            // button2
+            // 
+            button40.BackColor = Color.Transparent;
+            button40.FlatAppearance.BorderColor = Color.White;
+            button40.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button40.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button40.FlatStyle = FlatStyle.Flat;
+            button40.Location = new Point(24, 31);
+            button40.Name = "button40";
+            button40.Size = new Size(53, 51);
+            button40.TabIndex = 22;
+            button40.UseVisualStyleBackColor = false;
+            button40.Click += button40_Click;
+            // 
             // Carro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(402, 582);
+            ClientSize = new Size(459, 776);
+            Controls.Add(button40);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -134,10 +146,10 @@
             Controls.Add(checkBox1);
             Controls.Add(button3);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Carro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Carro";
+            Load += Carro_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,5 +163,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button button40;
     }
 }
